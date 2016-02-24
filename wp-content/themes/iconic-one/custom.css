@@ -2,3 +2,20 @@
 Theme Name: Iconic One
 Custom CSS Template for Iconic One.
 */
+
+.wp-pagenavi {height:54px; font-size:15px; float: right; margin-bottom: 20px;}
+.wp-pagenavi a, .wp-pagenavi span.current {margin:2px; text-decoration:none; border:1px solid #e3e3e3; color:#000; background:#fff; display:block; float:left; width:25px; height:29px; text-align:center; line-height:32px; -webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%; font-weight: 700; font-size: 12px;}
+.wp-pagenavi span.current {text-shadow:none;}
+.wp-pagenavi a:visited {padding:6px 6px 5px; margin:2px; text-decoration: none; border:1px solid #e3e3e3; color:#000; background:#fff;}
+.wp-pagenavi a:hover {border:1px solid #ff6a00; color:#fff; background:#ff6a00; text-shadow:none;}
+.wp-pagenavi .previouspostslink, .wp-pagenavi .nextpostslink {border:0; background: none;}
+.wp-pagenavi .previouspostslink:hover , .wp-pagenavi .nextpostslink:hover {color: #898989; background: none; border:0;}
+.wp-pagenavi a:active {/*padding:6px 6px 5px; margin:2px;*/ text-decoration:none; border:1px solid #e3e3e3; color:#fff; background:#ff6a00;}
+.wp-pagenavi span.pages {padding:11px 6px 15px; margin:2px; color:#000; background:transparent; float:left;}
+.wp-pagenavi span.current {margin:2px; border:1px solid #000; color:#000; border:1px solid #ff6a00; color:#fff; background:#ff6a00;}
+.wp-pagenavi span.extend {margin:2px; color:#000; background:#fff; float:left; -webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%; width:50px; height: 50px; line-height: 44px; text-align: center; border:1px solid #e3e3e3; background:#fff;}
+.wp-pagenavi .last {width:50px; height: 50px; line-height: 44px;}
+
+.wp-pagenavi a, .wp-pagenavi span{
+	border: none!important;
+}

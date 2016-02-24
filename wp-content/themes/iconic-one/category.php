@@ -7,7 +7,6 @@
  */
 
 get_header(); ?>
-
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
@@ -40,6 +39,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</div><!-- #content -->
+<?php wp_pagenavi(); ?>
 	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>

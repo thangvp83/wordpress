@@ -182,7 +182,7 @@ max-width: 100%;
 	content: "";
 }
 
-.wrapper{border: 1px solid #e9e9e9;}
+/*.wrapper{border: 1px solid #e9e9e9;}*/
 
 /* =Repeatable patterns
 -------------------------------------------------------------- */
@@ -238,10 +238,12 @@ textarea {
 }
 
 #searchsubmit {
-    background: #00A1E0;
+    background: #ff6a00;
     border: 0;
     color: #FFFFFF;
     min-width: 24%;
+    height: 33px;
+    cursor: pointer;
 }
 /* Reset non-text input types */
 input[type="checkbox"],
@@ -491,9 +493,9 @@ a:hover {
 
 /* Header */
 .site-header {
-	border-left: 1px solid #E9E9E9;
+	/*border-left: 1px solid #E9E9E9;
     border-right: 1px solid #E9E9E9;
-    border-top: 1px solid #E9E9E9;
+    border-top: 1px solid #E9E9E9;*/
     height: auto;
     margin-bottom:24px;
     text-align: left;
@@ -537,9 +539,10 @@ a:hover {
 .bread_crumb {
     margin:0;
     border-bottom:1px solid #eee;
-    padding:0.8em 0 0.5em;
+    padding: 10px;
     clear: both;
     height: 20px;
+    line-height: 20px;
     background: #f8f8f8;
 }
 .bread_crumb li {
@@ -572,7 +575,7 @@ a:hover {
 }
 
 .themonic-nav li {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.42857143;
 	width:auto;
 	transition: .3s ease 0s;
@@ -581,7 +584,7 @@ a:hover {
 .themonic-nav li:hover {
 		display: inline-block;
 		text-decoration: none;
-		background:#00A1E0;
+		background:#019ED1;
 		}
 	
 .themonic-nav  li a{
@@ -590,7 +593,7 @@ a:hover {
 
 /* These are used for Themonic Main Nav Bar li background colors - for colorful menu */
 
-.bluem{ background-color:#00A1E0; padding:5px; }
+.bluem{ background-color:#019ED1; padding:5px; }
 .orangem{ background-color:#FF811A;  }
 .greenm{ background-color:#8AC327; }
 .redm{ background-color:#F96234; padding:10px;}
@@ -609,8 +612,10 @@ section[role="banner"] {
 	word-wrap: break-word;
 }
 .widget-area .widget-title {
-	background: #F2F2F2;
+	background: #16A1E7;
 	font-size: 16px;
+	color: #FFF;
+	border-right: 1px #FF6A00 solid;
 }
 
 .widget.widget_search {
@@ -626,7 +631,7 @@ section[role="banner"] {
 }
 .widget-area .widget p {
 	margin-bottom: 12px;
-	padding: 10px;
+	padding: 8px;
 }
 	
 .widget-area .textwidget ul {
@@ -636,17 +641,26 @@ section[role="banner"] {
 .widget-area .textwidget li {
 	margin-left: 36px;
 }
+.widget-area .widget li::before {
+	content: "»";
+  	height: 31px;
+        display: block;
+        width: 10px;
+        float: left;
+        color: #FF6A00;
+}
 .widget-area .widget a {
-	color: #757575;
+	color: #555;
 	text-decoration:none;
 	font-size: 98%;
 }
 .widget-area .widget a:hover {
-	color: #4F5254;
+	color: #ff6a00;
+	text-decoration:underline;
 }
 .widget-area #s {
 	margin-right: -4px;
-	width: 67.9999%; /* define a width to avoid dropping a wider submit button */
+	/*width: 67.9999%;*/ /* define a width to avoid dropping a wider submit button */
 }
 
 /* Footer box-shadow: 4px 1px 10px 1px #F1F1F1;*/
@@ -692,11 +706,12 @@ footer[role="contentinfo"] a:hover {
 	margin-bottom:20px;
 }
 .entry-header .entry-title a {
-	color: #444444;
+	color: #23282D;
 	text-decoration: none;
 }
 .entry-header .entry-title a:hover{
-	color: #111111;
+	color: #FF6A00;
+	text-decoration: underline;
 }
 .entry-header .entry-format {
 	margin-top: 24px;
@@ -920,7 +935,7 @@ img.aligncenter {
 	padding: 7px 14px;
 }
 .site-content article {
-	border-bottom: 2px double #F3F3F3;
+	/*border-bottom: 2px double #F3F3F3;*/
 	margin-bottom: 28px;
 	padding-bottom: 24px;
 	word-wrap: break-word;
@@ -956,7 +971,7 @@ footer.entry-meta {
 /* =Archives
 -------------------------------------------------------------- */
 
-.archive-header,
+/*.archive-header,*/
 .page-header {
 	margin-bottom: 48px;
 	padding-bottom: 22px;
@@ -1456,7 +1471,7 @@ img#wpstats {
 		max-width: 1040px;
 	}
 	.site-content {
-	border-right: 1px solid #F1F1F1;
+	/*border-right: 1px solid #F1F1F1;*/
     float: left;
     margin: 0px 1%;
     padding: 30px 2% 0 1%;
@@ -1471,7 +1486,7 @@ img#wpstats {
 	.widget-area {
     float: right;
     margin: 24px 0;
-    padding: 0 2% 0 0;
+    /*padding: 0 2% 0 0;*/
     width: 28.7%;
 	}
 	.site-header h1,
@@ -1486,7 +1501,9 @@ img#wpstats {
 	.themonic-nav ul.nav-menu,
 	.themonic-nav div.nav-menu > ul {
 	background:none repeat scroll 0 0 #F3F3F3;
-		border-bottom: 5px solid #16A1E7;
+		/*border-bottom: 5px solid #16A1E7;*/
+		border-bottom: 1px solid #f04124;
+		background: #16A1E7;
 		border-top: 1px solid #ededed;
 		display: inline-block !important;
 		text-align: left;
@@ -1500,6 +1517,7 @@ img#wpstats {
 	.themonic-nav li {
 		display: inline-block;
 		text-decoration: none;
+		float: left;
 	}
 	.themonic-nav li a {
 		border-bottom: 0;
@@ -1509,9 +1527,12 @@ img#wpstats {
 /*		text-transform: uppercase;*/
 		white-space: nowrap;
 		transition: .3s ease 0s;
+		color: #FFF;
+		font-family: tahoma;
 	}
 	.themonic-nav li a:hover {
 		color: #fff;
+		background: #ff6a00;
 	}
 	.themonic-nav li {
 		position: relative;
@@ -1524,6 +1545,8 @@ img#wpstats {
 		position: absolute;
 		top: 100%;
 		z-index: 1;
+		box-shadow: 0 15px 15px rgba(0,0,0,.33)!important;
+		/*margin-top: 1px;*/
 	}
 	.themonic-nav li ul ul {
 		top: 0;
@@ -1537,29 +1560,39 @@ img#wpstats {
 		background: #EFEFEF;
 		border-bottom: 1px solid #F9F9F9;
 		display: block;
-		font-size: 11px;
+		font-size: 12px;
 		line-height: 2.181818182;
-		padding: 8px 10px;
+		padding: 3px 10px;
 		width: 160px;
 		white-space: normal;
+		color: #666;
 	}
 	
 	.themonic-nav li ul li a:hover {
-		background: #e9e9e9;
-		color: #444;
+		/*background: #e9e9e9;*/
+		background: #ccc;
+		color: #222;
 	}
 	
 /*	.themonic-nav .current-menu-item > a,*/
-	.themonic-nav .current-menu-ancestor > a,
 	.themonic-nav .current_page_item > a,
 	.themonic-nav .current_page_ancestor > a {
 		    background: none repeat scroll 0 0 #16A1E7;
 			color: #FFFFFF;
 			font-weight: bold;
 	}
-	.themonic-nav .current-menu-item > a
+	.themonic-nav .current-menu-ancestor > a,
+	.themonic-nav ul#menu-top li.current-menu-item > a
 	{
-		color: #6a6a6a;
+		/*color: #444;*/
+		/*border-bottom: 1px solid #f04124;*/
+		background: #ff6a00;
+	}
+	.themonic-nav ul#menu-top li ul.sub-menu li.current-menu-item > a
+	{
+		color: #222;
+		/*border-bottom: 1px solid #f04124;*/
+		background: #ccc;
 	}
 	.entry-header .entry-title {
 		font-size: 28px;
@@ -1616,7 +1649,7 @@ img#wpstats {
 		background-color: #e6e6e6;
 	}
 	body .site {
-		padding: 24px 24px 0;
+		/*padding: 24px 24px 0;*/
 		margin-bottom: 24px;
 		}
 	body.custom-background-empty {
