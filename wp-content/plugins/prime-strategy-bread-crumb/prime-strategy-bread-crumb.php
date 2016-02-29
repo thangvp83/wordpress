@@ -25,7 +25,7 @@ public function bread_crumb( $args = '' ) {
 
 	$default = array(
 		'type'				=> 'list',
-		'home_label'		=> __( 'Home', 'ps-bread-crumb' ),
+		'home_label'		=> __( 'Trang chủ', 'ps-bread-crumb' ),
 		'search_label'		=> __( 'Search Result of "%s"', 'ps-bread-crumb' ),
 		'404_label'			=> __( '404 Not Found', 'ps-bread-crumb' ),
 		'category_label'	=> _x( '%s', 'category label', 'ps-bread-crumb' ),
